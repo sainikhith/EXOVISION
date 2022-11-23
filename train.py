@@ -29,7 +29,7 @@ dialog_text = 'Are you sure?'
  
 window.geometry('720x720')
 window.configure(background='#ffffff')
-window.wm_title('EXOVISION')
+window.wm_title('EXOVISION - ATTENDANCE CAPTURE SYSTEM')
 #window.attributes('-fullscreen', True)
 
 window.grid_rowconfigure(0, weight=1)
