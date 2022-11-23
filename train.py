@@ -321,15 +321,21 @@ def login_button_click():
         txt.delete('0', 'end')
         txt2.delete('0', 'end')
         open_button_click()
-        tkinter.messagebox.showerror("Error", "Please Enter Both UserId and Password")
+        tkinter.messagebox.showerror("Error", "Please enter both user id and password")
         return
     elif(is_number(Id)==False):
         openButton['text'] = "open"
         txt.delete('0', 'end')
         txt2.delete('0', 'end')
         open_button_click()
-        tkinter.messagebox.showerror("Error", "Please Enter Only Numbers in UserId")
+        tkinter.messagebox.showerror("Error", "Please enter only numbers in user id")
         return
+    elif(len(Id)>7):
+        openButton['text'] = "open"
+        txt.delete('0', 'end')
+        txt2.delete('0', 'end')
+        open_button_click()
+        tkinter.messagebox.showerror("Error", "The user id should not exceed 7 characters")
     else:
         Id=(txt.get())
         name=(txt2.get())
